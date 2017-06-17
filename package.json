@@ -1,0 +1,35 @@
+{
+  "name": "vue-sui-toast",
+  "version": "0.0.1",
+  "description": "Vue 2.x port of sui toast component",
+  "main": "dist/vue-sui-toast.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "dev": "rollup -c build/rollup.config.js --watch",
+    "build": "npm run clean && rollup -c build/rollup.config.js && uglifyjs -m -o dist/vue-sui-toast.min.js -- dist/vue-sui-toast.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Treri/vue-sui-toast.git"
+  },
+  "keywords": [
+    "SUI",
+    "Toast",
+    "Vue"
+  ],
+  "author": "Treri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Treri/vue-sui-toast/issues"
+  },
+  "homepage": "https://github.com/Treri/vue-sui-toast#readme",
+  "devDependencies": {
+    "rollup": "^0.43.0",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-vue": "^2.4.0",
+    "rollup-watch": "^4.0.0",
+    "uglify-js": "^3.0.17",
+    "vue": "^2.3.4"
+  }
+}
