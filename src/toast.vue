@@ -14,7 +14,7 @@
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     text-align: center;
@@ -27,8 +27,8 @@
     padding: 0 16px;
     height: 40px;
     line-height: 40px;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
     width: auto;
     max-width: 100%;
   }
