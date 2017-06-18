@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vue-sui-toast</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <style>
+    html {
+      font-size: 20px;
+    }
+    body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  </style>
+  <script src="https://unpkg.com/vue@2.2.4/dist/vue.min.js"></script>
+  <script src="../dist/vue-sui-toast.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div id="toast" class="demo">
+      <fieldset>
+        <legend>vm.$toast</legend>
+        <div class="desc"></div>
+        <pre><code>vm.$toast('操作成功')</code></pre>
+        <button type="button" class="pure-button button-primary" @click.stop.prevent="toast">toast</button>
+      </fieldset>
+    </div>
+  </div>
+  <script>
+    new Vue({
+      el: '#toast',
+      methods: {
+        toast(){
+          this.$toast('操作成功');
+        }
+      }
+    })
+  </script>
+</body>
+</html>
