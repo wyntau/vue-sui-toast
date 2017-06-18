@@ -5,7 +5,7 @@
 ### Install
 
 ```sh
-vue install vue-sui-toast
+npm install vue-sui-toast
 ```
 
 ### Usage
