@@ -8,7 +8,7 @@
 
 <style scoped>
   .vue-sui-toast{
-    display: block;
+    display: inline-table;
 
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
